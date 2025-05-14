@@ -307,7 +307,7 @@ socket.on('updateBoard', handleUpdateBoard);
   
   const getCellImage = (cell) => {
     if (cell === null) return 'bg-white'; // Applique un fond blanc si la cellule est vide
-    return playerColors[cell] === 'green' ? '../public/assets/green.png' : '../public/assets/yellow.png'; // Retourne l'image correspondante pour chaque joueur
+    return playerColors[cell] === 'green' ? '/assets/green.png' : '/assets/yellow.png'; // Retourne l'image correspondante pour chaque joueur
   };
   
 
