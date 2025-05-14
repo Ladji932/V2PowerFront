@@ -5,7 +5,8 @@
   "main": "eslint.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "vite"
+    "dev": "vite",
+    "build": "react-scripts build"
   },
   "repository": {
     "type": "git",
@@ -28,6 +29,7 @@
     "react-confetti": "^6.4.0",
     "react-dom": "^19.1.0",
     "react-konva": "^19.0.3",
+    "react-scripts": "^5.0.1",
     "socket.io-client": "^4.8.1",
     "tailwindcss": "^4.1.3"
   },
