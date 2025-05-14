@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vite",
-    "build": "react-scripts build"
+    "build": "vite build"
   },
   "repository": {
     "type": "git",
@@ -29,12 +29,23 @@
     "react-confetti": "^6.4.0",
     "react-dom": "^19.1.0",
     "react-konva": "^19.0.3",
-    "react-scripts": "^5.0.1",
     "socket.io-client": "^4.8.1",
     "tailwindcss": "^4.1.3"
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "^4.3.4",
-    "vite": "^6.2.5"
+    "@vitejs/plugin-react": "^4.4.1",
+    "vite": "^6.3.5"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
