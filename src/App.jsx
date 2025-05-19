@@ -23,7 +23,7 @@ const App = () => {
   const [gravityInverted, setGravityInverted] = useState(false);
   const [playerColors, setPlayerColors] = useState({});
   const [lastMove, setLastMove] = useState(null);
-  const [mode, setMode] = useState('1v1');  // Initialisation à '1v1' par défaut
+  const [mode, setMode] = useState('1v1');  
   const [waitingScreen, setWaitingScreen] = useState(false);
   const [copied, setCopied] = useState(false);
   const [winningCells, setWinningCells] = useState([]);
