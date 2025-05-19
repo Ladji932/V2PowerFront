@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+
 import { io } from 'socket.io-client';
 import { Copy, Users, Trophy, Crown, Loader2 } from 'lucide-react';
 import RenderCell from './components/RenderCell';
@@ -6,7 +7,7 @@ import Background from './components/Background';
 import Attente from './components/Attente';
 
 
-const socket = io('https://backpowerfour.onrender.com/');
+const socket = io('http://localhost:3000/');
 
 const App = () => {
   let playerTeam = [];
@@ -217,9 +218,8 @@ socket.on('updateBoard', handleUpdateBoard);
     const handlePlayerLeft = () => {
       setMessage("Un joueur a quitté la partie");
       setGameStarted(false);
-      setIsWaitingForPlayers(false);
       setBoard([]);
-      resetGameState();
+      resetGame();
     };
 
     const handleError = (error) => setMessage(error);
