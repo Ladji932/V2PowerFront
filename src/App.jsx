@@ -7,7 +7,7 @@ import Background from './components/Background';
 import Attente from './components/Attente';
 
 
-const socket = io('http://localhost:3000/');
+const socket = io('https://backpowerfour.onrender.com/');
 
 const App = () => {
   let playerTeam = [];
